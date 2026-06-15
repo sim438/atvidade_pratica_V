@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <title>Feed</title>
+    <style>
+        .perfil {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .usuario {
+            margin: 0;
+        }
+
+        .username {
+            color: gray;
+            font-size: 0.9rem;
+        }
+
+        .post {
+            margin-top: 1rem;
+        }
+
+        .acoes {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<header class="container">
+    <nav>
+        <ul>
+            <li><strong>MiniRede</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Buscar</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="index.html" role="button" class="secondary">Sair</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <article>
+        <h2>Novo Post</h2>
+        <div class="perfil">
+            <img
+                src="https://i.pravatar.cc/150?img=12"
+                alt="Avatar"
+                class="avatar">
+            <div>
+                <h4 class="usuario">Álex Alves</h4>
+                <span class="username">@alexalves</span>
+            </div>
+        </div>
+        <textarea placeholder="O que você está pensando hoje?" rows="5"></textarea>
+        <button>Publicar</button>
+    </article>
+    <section>
+        <h2>Posts Criados</h2>
+        <article class="post">
+            <div class="perfil">
+                <img src="https://i.pravatar.cc/150?img=15" alt="Avatar" class="avatar">
+                <div>
+                    <h4 class="usuario">Maria Silva</h4>
+                    <span class="username">@mariasilva</span>
+                </div>
+            </div>
+            <p>Acabei de terminar meu projeto de desenvolvimento web! Foi um desafio enorme, mas aprendi bastante durante o processo.</p> 
+            <div class="acoes">
+                <span>❤️ 24</span>
+                <span>💬 8</span>
+            </div>
+        </article>
+        <article class="post">
+            <div class="perfil">
+                <img src="https://i.pravatar.cc/150?img=20" alt="Avatar" class="avatar">
+                <div>
+                    <h4 class="usuario">João Santos</h4>
+                    <span class="username">@joaosantos</span>
+                </div>
+            </div>
+            <p>Estudando HTML, CSS e Pico CSS. Estou gostando bastante da simplicidade do framework!</p>                                     
+            <div class="acoes">
+                <span>❤️ 18</span>
+                <span>💬 5</span>
+            </div>
+        </article>
+        <article class="post">
+            <div class="perfil">
+                <img src="https://i.pravatar.cc/150?img=25" alt="Avatar" class="avatar">                                                       
+                <div>
+                    <h4 class="usuario">Ana Costa</h4>
+                    <span class="username">@anacosta</span>
+                </div>
+            </div>
+            <p>Que dia incrível! Aprender programação abre muitas portas para o futuro.</p>                                     
+            <div class="acoes">
+                <span>❤️ 35</span>
+                <span>💬 12</span>
+            </div>
+        </article>
+    </section>
+</main>
+</body>
+</html>
